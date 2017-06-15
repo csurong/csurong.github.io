@@ -14,7 +14,7 @@ url: "https://csurong.github.io" # the base hostname & protocol for your site
 permalink: /:year/:month/:day/:title/
 
 # other links
-twitter_username: csurong
+twitter_username: csurong1
 facebook_username: #gaohaoyang.water
 github_username:  csurong
 email: csurong1@gmail.com
@@ -23,7 +23,7 @@ zhihu_username: #gaohaoyang
 linkedIn_username: #gaohaoyang
 dribbble_username:
 
-description_footer: 本站记录我前端之旅的沿途风景！
+description_footer: 长风破浪会有时！
 
 # comments
 # two ways to comment, only choose one, and use your own short name
