@@ -17,7 +17,7 @@ type: page
 ## 联系我
 
 * GitHub：[csurong](https://github.com/csurong)
-* email：csurong1@gmail.com
+* Email：csurong1@gmail.com
 * WeChat: caosurong1
 * [Twitter](https://twitter.com/csurong1)
 
