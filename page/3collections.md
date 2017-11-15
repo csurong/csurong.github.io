@@ -47,6 +47,14 @@ type: page
 
 ## 编程语言
 
+### Python
+
+* [Python 魔术方法指南](http://pycoders-weekly-chinese.readthedocs.io/en/latest/issue6/a-guide-to-pythons-magic-methods.html)
+
+* [Flask 文档](http://docs.jinkan.org/docs/flask/)
+
+* [Jinja2 文档](http://docs.jinkan.org/docs/jinja2/)
+
 ### JavaScript
 
 * [JavaScript 标准参考教程（alpha） -阮一峰](http://javascript.ruanyifeng.com/)
@@ -65,7 +73,7 @@ type: page
 
 * [JavaScript 设计模式 系列 AlloyTeam](http://www.alloyteam.com/2012/10/common-javascript-design-patterns/)
 
-### ES2015
+### ES2015/ES6
 
 - [https://tc39.github.io/ecma262/](https://tc39.github.io/ecma262/)
 * [http://www.ecma-international.org/ecma-262/6.0/](http://www.ecma-international.org/ecma-262/6.0/)
@@ -124,19 +132,6 @@ type: page
 * [深入理解 React -Thinking in React 中文版](http://reactjs.cn/react/docs/thinking-in-react.html)
 * [Thinking in React](http://facebook.github.io/react/docs/thinking-in-react.html)
 
-### AngularJS
-
-- [学习AngularJS 1.x -Harry<harry@andtoo.net>](https://hairui219.gitbooks.io/learning_angular/content/zh/index.html)
-
-    本书是作者 [Harry](https://github.com/hairui219) 在学习和应用AngularJS 1.x 的过程中的资料梳理。希望能对大家学习AngularJS有一定帮助……
-
-* [AngularJS api 官网](https://docs.angularjs.org/api)
-
-* [AngularJS入门教程——AngularJS中文社区提供](https://github.com/zensh/AngularjsTutorial_cn)
-
-* [AngularJS 教程 \| 菜鸟教程](http://www.runoob.com/angularjs/angularjs-tutorial.html)
-
-    类似 w3school 的入门 AngularJS 教程。
 
 ### 测试
 
@@ -234,43 +229,6 @@ Syntax Theme: Atom Dark or One Dark
 
     新建 tab 时，显示 dribbble 上的精选作品。
 
-<!-- ## Other blogs
-
-- [COLORFUL xiaoa](http://www.xiaoa.name/)
-
-* [进击的马斯特 http://pinkyjie.com/](http://pinkyjie.com/)
-
-    马斯特，87年生人，爱溜冰的码农。技术： Javascript、Python、Mac、iOS
-
-* [Jerry Qu](https://imququ.com/)
-
-    JerryQu，奇虎 360，前端开发，前百度前端。
-
-* [码志 https://mazhuang.org/](https://mazhuang.org/)
-
-    我是马壮，码而生，码而立。就职sogou。
-
-* [小胡子哥 http://www.barretlee.com/](http://www.barretlee.com/)
-
-    李靖，阿里巴巴。
-
-* [Xcat Liu http://blog.xcatliu.com/](http://blog.xcatliu.com/)
-
-    Microsoft Software Engineer II, Meituan Senior Front-End Engineer
-
-* [极限前端 http://ouvens.github.io/](http://ouvens.github.io/)
-
-    Ouvenzhang, 前端工程师，对前端领域的技术知识具有较高的职业能力和探究精神。对响应式页面设计、工程构建组件化、mv*设计实现、前端优化、ES6开发体系等有深入的研究与项目实践。来自腾讯科技。
-
-* [凳子_Joinery 邓智容  http://www.dengzhr.com/](http://www.dengzhr.com/)
-
-* [赵达的个人网站 腾讯高级前端开发工程师](http://zhaoda.net/)
-
-* [Randy](http://djyde.github.io/)
-
-    95年出生的全栈。卢涛南，英文名 Randy，用 djyde 这个ID混迹于网络。
-
-* [JS前端开发群月报 -豪情等人维护](http://www.kancloud.cn/jsfront/month/82796) -->
 
 ## 交互设计相关
 

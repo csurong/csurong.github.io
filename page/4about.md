@@ -11,7 +11,7 @@ type: page
 
 
 ## 关于我
-大三在读
+大四学生
 
 
 ## 联系我
@@ -19,7 +19,6 @@ type: page
 * GitHub：[csurong](https://github.com/csurong)
 * Email：csurong1@gmail.com
 * WeChat: caosurong1
-* [Twitter](https://twitter.com/csurong1)
 
 
 ## Comments
