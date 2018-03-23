@@ -84,16 +84,16 @@ birthday datetime  //最后不要写逗号，报错
 
 ### 基本查询
 
-+ select * from 表名;
-+ select name,gender from students; 查询多个列
++ `select * from 表名;`
++ `select name,gender from students;` 查询多个列
 
 消除重复行；
-    + select distinct gender from students;
-    + select distinct id,gender from students; id和gender都不重复，只要有一个不重复就都返回
+    + `select distinct gender from students;`
+    + `select distinct id,gender from students;` id和gender都不重复，只要有一个不重复就都返回
 
 ### where查询
 
-select * from 表名 where 条件;
+`select * from 表名 where 条件;`
 
 + 比较运算符：= > >= !=
 + 逻辑运算符：and or not
@@ -103,8 +103,8 @@ select * from 表名 where 条件;
     + \_: 下划线表示任意一个字符
 
 + 范围查询；
-    + in: select * from students where id in(1,3,8); 查询编号是1或3或8的学生
-    + between...and...:select * from students where id between 3 and 8; 在一个连续的范围内
+    + `in: select * from students where id in(1,3,8); `查询编号是1或3或8的学生
+    + `between...and...:select * from students where id between 3 and 8;` 在一个连续的范围内
 
 + 空判断：select * from students where birthday is null 或者 is not null; 注意null和‘’是不同的
 
@@ -118,13 +118,13 @@ select * from 表名 where 条件;
 + 分组：按照字段分组（男生一队，女生一队）
     + 先按字段分组，再按条件 select
     + 一般分组都是为了做聚合
-```
+```sql
 select gender,count(*)
 from students
 group by gender;
 ```
 + 分组后的数据删选：
-```
+```sql
 select gender,count(*)
 from students
 group by gender
@@ -137,7 +137,7 @@ having gender=1;  // having后面的条件运算符与where的相同
 + 排序：order by `select * from subject where isdelete=0 order by stitle;`
 + 分页：获取部分行 `select * from 表名 limit start,count` 从 start 开始，获取count条数据
 + 顺序：
-```
+```sql
 select distinct *
 from 表名
 where ....
@@ -152,7 +152,7 @@ limit star,count
 
 + 约束完成检查（建立了关系字段之后，为了保证数据的有效性而添加的一种约束）
 + 外键的级联操作：在删除students表的数据时，如果这个id值在scores中已经存在，则会抛异常。鸡肋功能，用逻辑删除可以避免这种情况
-```
+```sql
 create table scores(
 id int primary key auto_increment,
 stuid int, // 这里已经创建好了
@@ -165,7 +165,7 @@ foreign key(subid) references subjects(id)
 
 ### 连接查询：
 
-```
+```sql
 select students.name, subjects.title, scores.score
 from scores
 inner join students on scores.stuid=student.id
@@ -175,7 +175,7 @@ inner join subjects on scores.subid=subjects.id
 + 注意 join 和 on 关键字
 + 谁 join 谁没关系，关键是要建立他们的关系
 
-```
+```sql
 select students.name, subjects.title, scores.score
 from students
 inner join scores on scores.stuid=students.id
@@ -187,7 +187,7 @@ inner join subjects on scores.subid=subjects.id; //和上面的结果一样的
     + right 是两个表都能匹配上的出现，右表特有的也出现
 
 + 例子；
-```
+```sql
 no.1
 需求：查询科目的名称、平均分
 分析：
@@ -247,7 +247,7 @@ group by subjects.title;
         + execute(operation [, parameters ])执行 sql 语句，返回受影响的行数
         + fetchone()执行查询语句时，获取查询结果集的第一个行数据，返回一个元组
         + fetchall()执行查询时，获取结果集的所有行，一行构成一个元组，再将这些元组装入一个元组返回
-```
+```python
 # 插入一条数据（增删改，就是把下面的 sql 语句改掉就行了）
 import pymysql
 def main():
@@ -268,7 +268,7 @@ def main():
 ### sql注入
 
 用户添加信息，不按套路出牌。解决方案是 sql 语句参数化
-```
+```python
 name = input('请输入学生姓名： ')
 conn = pymysql.connect(host='localhost', port=3306, db='csurong', user='root', passwd='rong', charset='utf8')
 cs1 = conn.cursor() //下面这个也是添加数据的一种方式，不过我没记，文档里有
@@ -282,7 +282,7 @@ conn.close()
 
 ### 查询
 
-```
+```python
 import MySQLdb
 try:
     conn=MySQLdb.connect(host='localhost',port=3306,db='test1',user='root',passwd='mysql',charset='utf8')
@@ -298,7 +298,7 @@ except Exception,e:
 
 ### 封装
 
-```
+```python
 # 封装成一个模块
 class PymysqlHelper:
     def __init__(self, host, port, db, user, password, charset='utf-8'):

@@ -28,6 +28,7 @@ reqeust是请求用的，爬虫中常用的 get、post都是这个模块的方�
 
 我在百度中搜索关键字“天气”，浏览器中看见的请求页面的地址是`https://www.baidu.com/s?wd=天气`，然而用 fiddler 抓取请求地址却发现，真正请求地址是:
 ![UrlEncode编码.png](https://upload-images.jianshu.io/upload_images/6434703-56ee5da203cb2237.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 这个地址才是浏览器真正发出去的请求的地址，一般HTTP请求提交数据，需要编码成 URL编码格式，然后做为url的一部分，或者作为参数传到Request对象中。这便是parse的作用。errors是发生错误或异常时用的，这个没什么好说的，使用的时候注意错误类型对象的继承关系就行了，文档中粗略给了两个错误类型方法 `URLError`和`HTTPError`，不过还可以细分，这个自己去看文档就好了。robotparser基本用不到的，这种东西对类似baidu、Google这种通用爬虫有意义，我们自己写的爬虫不用管这个，感兴趣的去[文档](https://docs.python.org/3/library/urllib.robotparser.html#module-urllib.robotparser)看吧
 
 ## 语法
@@ -66,7 +67,7 @@ response = urllib2.urlopen(request, context = context)
 ## 代理访问
 
 urllib中通过ProxyHandler来设置使用代理服务器
-```
+```python
 import urllib.request
 
 # 构建了两个代理Handler，一个有代理IP，一个没有代理IP

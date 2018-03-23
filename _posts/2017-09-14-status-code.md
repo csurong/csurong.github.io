@@ -17,6 +17,7 @@ http响应状态码总结
 
 ## 状态码
 
+```python
 100: ('continue',),
 101: ('switching_protocols',),
 102: ('processing',),
@@ -91,4 +92,5 @@ http响应状态码总结
 507: ('insufficient_storage',),
 509: ('bandwidth_limit_exceeded', 'bandwidth'),
 510: ('not_extended',),
-511: ('network_authentication_required', 'network_auth', 'network_authentication'),
+511: ('network_authentication_required', 'network_auth', 'network_authentication')
+```
