@@ -18,7 +18,6 @@ type: page
 
 * GitHub：[csurong](https://github.com/csurong)
 * Email：csurong1@gmail.com
-* WeChat: caosurong1
 
 
 ## Comments
